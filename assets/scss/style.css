@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.city {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 200px;
+}
+
+.city .city__itm {
+  width: 15vw;
+  height: 30vw;
+  border: 2px solid black;
+  margin: 20px auto 20px;
+  position: relative;
+  background-color: lightgrey;
+}
+
+.city .city__itm .door, .city .city__itm .window {
+  width: 25%;
+}
+
+.city #house1 * {
+  position: static;
+}
+
+.city #house1 .walls {
+  margin-top: -5%;
+}
+
+.city #house1 .door {
+  margin: -43.5% 0 0 20%;
+}
+
+.city #house1 .window {
+  margin: -45% 0 0 60%;
+}
+
+.city #house2 * {
+  position: relative;
+}
+
+.city #house2 .walls {
+  bottom: 6px;
+}
+
+.city #house2 .door {
+  margin: -48% 0 0 20%;
+}
+
+.city #house2 .window {
+  margin: -45% 0 0 60%;
+}
+
+.city #house3 * {
+  position: absolute;
+}
+
+.city #house3 .roof {
+  width: 100%;
+}
+
+.city #house3 .walls {
+  width: 100%;
+  top: 24%;
+}
+
+.city #house3 .door {
+  top: 35%;
+  left: 20%;
+}
+
+.city #house3 .window {
+  top: 35%;
+  left: 60%;
+}
+
+.city #house4 .roof, .city #house4 .walls, .city #house4 .window, .city #house4 .door {
+  position: fixed;
+}
+
+.city #house4 .roof {
+  width: 15vw;
+}
+
+.city #house4 .walls {
+  width: 15vw;
+  margin-top: 7.4%;
+}
+
+.city #house4 .door {
+  width: 3.75vw;
+  margin: 10.65% 0 0 3%;
+}
+
+.city #house4 .window {
+  width: 3.75vw;
+  margin: 10.65% 0 0 9%;
+}
+
+.city #house5 {
+  height: 100%;
+}
+
+.city #house5 * {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.city #house5 .roof {
+  z-index: 2;
+}
+
+.city #house5 .walls {
+  margin-top: -4%;
+  z-index: 0;
+}
+
+.city #house5 .door {
+  margin: -43.5% 0 0 20%;
+  z-index: 1;
+}
+
+.city #house5 .window {
+  margin: -45% 0 0 60%;
+  z-index: 1;
+}
+
+.city img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

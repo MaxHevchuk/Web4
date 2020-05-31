@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color:lightblue;
+}
+.city{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 200px;
+    
+    & .city__itm{
+        width: 15vw;
+        height: 30vw;
+        border: 2px solid black;
+        margin: 20px auto 20px;
+        position: relative;
+        background-color: lightgrey;
+
+
+        & .door, .window{
+            width: 25%;
+        }
+    }
+
+    & #house1{
+        & *{
+            position: static;
+        }
+        & .walls{
+            margin-top: -5%;
+        }
+        & .door{
+            margin: -43.5% 0 0 20%;
+        }
+        & .window{
+            margin: -45% 0 0 60%;
+        }
+    }
+    & #house2{
+        & *{
+            position: relative;
+        }
+        & .walls{
+            // margin-top: -5%;
+            bottom: 6px;
+        }
+        & .door{
+            margin: -48% 0 0 20%;
+            // left: 35px;
+            // bottom: 80px;
+        }
+        & .window{
+            margin: -45% 0 0 60%;
+            // left: 103px;
+            // bottom: 154px;
+        }
+    }
+    & #house3{
+        & *{
+            position: absolute;
+        }
+        & .roof{
+            width: 100%;
+        }
+        & .walls{
+            width: 100%;
+            top: 24%;
+        }
+        & .door{
+            top: 35%;
+            left: 20%;;
+        }      
+        & .window{
+            top: 35%;
+            left: 60%;
+        }  
+    }
+    & #house4{
+        & .roof, & .walls, & .window, & .door{
+            position: fixed;
+        }
+        & .roof{
+            width: 15vw;
+        }
+        & .walls{
+            width: 15vw;
+            margin-top: 7.4%;
+        }
+        & .door{
+            width: 3.75vw;
+            margin: 10.65% 0 0 3%;
+        }
+
+        & .window{
+            width: 3.75vw;
+            margin: 10.65% 0 0 9%;
+        }
+    }
+    & #house5{
+        height: 100%;
+        & *{
+            position: sticky;
+            top: 0;
+        }
+        & .roof{
+            z-index: 2;
+        }
+        & .walls{
+            margin-top: -4%;
+            z-index: 0;
+        }
+        & .door{
+            margin: -43.5% 0 0 20%;
+            z-index: 1;            
+        }
+        & .window{
+            margin: -45% 0 0 60%;
+            z-index: 1;
+        }
+    }
+
+    
+    & img{
+        width: 100%;
+    }
+}
