@@ -35,7 +35,7 @@ body{
             margin-top: -5%;
         }
         & .door{
-            margin: -43.5% 0 0 20%;
+            margin: -43% 0 0 20%;
         }
         & .window{
             margin: -45% 0 0 60%;
@@ -46,18 +46,13 @@ body{
             position: relative;
         }
         & .walls{
-            // margin-top: -5%;
             bottom: 6px;
         }
         & .door{
-            margin: -48% 0 0 20%;
-            // left: 35px;
-            // bottom: 80px;
+            margin: -46% 0 0 20%;
         }
         & .window{
             margin: -45% 0 0 60%;
-            // left: 103px;
-            // bottom: 154px;
         }
     }
     & #house3{
@@ -115,7 +110,7 @@ body{
             z-index: 0;
         }
         & .door{
-            margin: -43.5% 0 0 20%;
+            margin: -43% 0 0 20%;
             z-index: 1;            
         }
         & .window{
