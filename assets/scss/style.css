@@ -46,7 +46,7 @@ body {
 }
 
 .city #house1 .door {
-  margin: -43.5% 0 0 20%;
+  margin: -43% 0 0 20%;
 }
 
 .city #house1 .window {
@@ -62,7 +62,7 @@ body {
 }
 
 .city #house2 .door {
-  margin: -48% 0 0 20%;
+  margin: -46% 0 0 20%;
 }
 
 .city #house2 .window {
@@ -135,7 +135,7 @@ body {
 }
 
 .city #house5 .door {
-  margin: -43.5% 0 0 20%;
+  margin: -43% 0 0 20%;
   z-index: 1;
 }
 
